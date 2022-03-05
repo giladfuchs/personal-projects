@@ -1,0 +1,511 @@
+{
+	"info": {
+		"_postman_id": "8f06b48a-2bab-435b-9d9e-72d74addc3da",
+		"name": "messageApp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\":\"herolo\",\n    \"password\":\"secret\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://message-app-flask.herokuapp.com/register",
+					"protocol": "https",
+					"host": [
+						"message-app-flask",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "register local",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\":\"bb\",\n    \"password\":\"secret\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/register",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post message",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MjU1MjE0MjksImlhdCI6MTYyNTUyMTEyOSwibmJmIjoxNjI1NTIxMTI5LCJpZGVudGl0eSI6M30.iem3YROuKD4XteUFD-8Fa5m_GcdqbkSz_Mps-sJ5-0c",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"receiver\":2,\n    \"subject\":\"hello\",\n    \"message\":\"how you doing?\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://message-app-flask.herokuapp.com/message",
+					"protocol": "https",
+					"host": [
+						"message-app-flask",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"message"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post message local",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MjU1ODc2MDIsImlhdCI6MTYyNTU4NzMwMiwibmJmIjoxNjI1NTg3MzAyLCJpZGVudGl0eSI6Mn0.1pnoO0z9l2xT_B9eRn3TwAVjXfslSOXq1j3CW3w6-40",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"receiver\":1,\n    \"subject\":\"hello\",\n    \"message\":\"how you doing?\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/message",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"message"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get message",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MjU1NzkyOTAsImlhdCI6MTYyNTU3ODk5MCwibmJmIjoxNjI1NTc4OTkwLCJpZGVudGl0eSI6Mn0.ZSv_hXIRth5e2J0FAi_yjX19UXsoMUSTgcu85RSYvXo",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://message-app-flask.herokuapp.com/message/2",
+					"protocol": "https",
+					"host": [
+						"message-app-flask",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"message",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get message local",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MjU1ODc2NzksImlhdCI6MTYyNTU4NzM3OSwibmJmIjoxNjI1NTg3Mzc5LCJpZGVudGl0eSI6MX0.hlC5WNYP7Q7SLFIRvn4oYlnG_883XabIbAvjj30dfVg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/message/3",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"message",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAll message",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MjU1ODY5ODgsImlhdCI6MTYyNTU4NjY4OCwibmJmIjoxNjI1NTg2Njg4LCJpZGVudGl0eSI6MX0.qxhXNUNXIqwRAituRmuRQTVlNGTWzR5_NYhhS9cyvM4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://message-app-flask.herokuapp.com/message",
+					"protocol": "https",
+					"host": [
+						"message-app-flask",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"message"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAll message local",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MjU1ODcwMDQsImlhdCI6MTYyNTU4NjcwNCwibmJmIjoxNjI1NTg2NzA0LCJpZGVudGl0eSI6MX0.2chCeXlE7LPimXeKK6hX5NBXcDOGBNUtHg1qVvOXoOY",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/message",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"message"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAll UnReadMessage",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MjU1ODY1OTQsImlhdCI6MTYyNTU4NjI5NCwibmJmIjoxNjI1NTg2Mjk0LCJpZGVudGl0eSI6MX0.obeQlzdlrysI264NWBQ0O6_oqC5iPUs33TiXqUNGnJc",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://message-app-flask.herokuapp.com/unreadmessages",
+					"protocol": "https",
+					"host": [
+						"message-app-flask",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"unreadmessages"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAll UnReadMessage local",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MjU1ODcxMjQsImlhdCI6MTYyNTU4NjgyNCwibmJmIjoxNjI1NTg2ODI0LCJpZGVudGl0eSI6MX0.zQlkvrGhoit24Es1jjpGzFGE26ZPzVdTNNnLdGyorFU",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/unreadmessages",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"unreadmessages"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete message",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MjU1NzkyOTAsImlhdCI6MTYyNTU3ODk5MCwibmJmIjoxNjI1NTc4OTkwLCJpZGVudGl0eSI6Mn0.ZSv_hXIRth5e2J0FAi_yjX19UXsoMUSTgcu85RSYvXo",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://message-app-flask.herokuapp.com/message/2",
+					"protocol": "https",
+					"host": [
+						"message-app-flask",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"message",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete message local",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MjU1ODc2NzksImlhdCI6MTYyNTU4NzM3OSwibmJmIjoxNjI1NTg3Mzc5LCJpZGVudGl0eSI6MX0.hlC5WNYP7Q7SLFIRvn4oYlnG_883XabIbAvjj30dfVg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/message/3",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"message",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\":\"herolo\",\n    \"password\":\"secret\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://message-app-flask.herokuapp.com/auth",
+					"protocol": "https",
+					"host": [
+						"message-app-flask",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"auth"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login local",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\":\"aa\",\n    \"password\":\"secret\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/auth",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"auth"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

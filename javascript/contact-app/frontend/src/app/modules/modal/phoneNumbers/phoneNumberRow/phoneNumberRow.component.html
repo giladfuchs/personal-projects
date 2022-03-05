@@ -1,0 +1,49 @@
+<form [formGroup]="phoneListForm" class="num-in-row">
+  <div class="input-group">
+    <input
+      type="text"
+      name="type"
+      [value]="phone.type"
+      class="form-control"
+      placeholder="Type"
+      [readonly]="!editMode"
+      formControlName="type"
+    />
+    <div *ngIf="valid('type')" class="error">error</div>
+  </div>
+  <div class="input-group">
+    <input
+      type="number"
+      name="numericNumber"
+      [value]="phone.numericNumber"
+      class="form-control"
+      placeholder="Number"
+      [readonly]="!editMode"
+      formControlName="numericNumber"
+      width="90"
+    />
+    <div *ngIf="valid('numericNumber')" class="error">error</div>
+  </div>
+
+  <div *ngIf="phone.id" class="icons">
+    <div *ngIf="editMode" class="icons">
+      <button
+        mat-icon-button
+        [disabled]="!(!valid('type', true) && !valid('numericNumber', true))"
+        color="primary"
+      >
+        <mat-icon (click)="onSubmit()" style="cursor: pointer">update</mat-icon>
+      </button>
+
+      <mat-icon (click)="cancelEditable()" style="cursor: pointer"
+        >cancel</mat-icon
+      >
+    </div>
+    <div *ngIf="!editMode" class="icons">
+      <mat-icon (click)="setEditable()" style="cursor: pointer">edit</mat-icon>
+      <mat-icon color="warn" (click)="onDelete()" style="cursor: pointer"
+        >delete</mat-icon
+      >
+    </div>
+  </div>
+</form>

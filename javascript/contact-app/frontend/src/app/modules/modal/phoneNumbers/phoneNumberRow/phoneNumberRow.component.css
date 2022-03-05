@@ -1,0 +1,25 @@
+.num-in-row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 4px;
+  /* margin-bottom: 20px; */
+}
+.icons {
+  display: flex;
+  flex-direction: row;
+}
+.input-group {
+  margin-right: 4px;
+}
+button {
+  margin: 4px;
+}
+
+.error {
+  height: 20px;
+  text-align: center;
+  width: 100%;
+  color: #d8000c;
+  background-color: #ffbaba;
+}

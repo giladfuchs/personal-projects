@@ -1,0 +1,39 @@
+@import "../../style/main.scss";
+
+.Options {
+  & .Title {
+    margin: 0;
+    font-size: $small-size;
+    text-align: right;
+  }
+
+  & .Select {
+    position: relative;
+    display: flex;
+    width: 80px;
+    height: 28px;
+    line-height: 3;
+    background: $white;
+    border: 1px solid $text-hint;
+    border-radius: 5px;
+    color: $text-body;
+    font-weight: 100;
+    overflow: hidden;
+    font-size: $small-size;
+    font-family: inherit;
+    cursor: pointer;
+
+    &::-ms-expand {
+      display: none;
+    }
+
+    &:focus {
+      border-color: $purple;
+      outline: none;
+    }
+
+    &:hover {
+      border-color: $purple;
+    }
+  }
+}

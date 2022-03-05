@@ -1,0 +1,78 @@
+@import "./variable.scss";
+@import "./responsive.scss";
+
+@mixin title-h1 {
+  text-align: center;
+  color: $text-color;
+  padding: 20px 0 10px 0;
+  background: $background-header-color;
+  margin: 0;
+  padding-bottom: 0;
+  font-size: 3.49rem;
+  font-weight: 300;
+
+  @include respond(phone) {
+  }
+
+  @include respond(tab-900) {
+  }
+
+  @include respond(tab-1200) {
+  }
+}
+
+@mixin svg {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  border-radius: 50%;
+  padding: 5px;
+  @include respond(phone) {
+    width: 25px;
+    height: 25px;
+    padding: 0;
+  }
+
+  &:hover {
+    background: rgba(52, 49, 76, 0.1);
+  }
+
+  @include respond(phone) {
+  }
+}
+
+@mixin settingsBody {
+  width: 95%;
+  margin: auto;
+  margin-top: 30px;
+  background-color: $white;
+  box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.06),
+    0px 6px 10px 0px rgba(0, 0, 0, 0.042), 0px 1px 18px 0px rgba(0, 0, 0, 0.036);
+  border-radius: 8px;
+
+  @include respond(phone) {
+    width: 100%;
+    box-shadow: none;
+    border: none;
+  }
+}
+
+
+@mixin settingsButton{
+  width: 95%;
+  margin: auto;
+  margin-top: 30px;
+  text-align: left;
+
+  @include respond(phone) {
+
+  }
+}
+
+@mixin flexWarp {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}

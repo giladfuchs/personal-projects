@@ -1,0 +1,33 @@
+@import "../../../../../../models/style/main.scss";
+
+.Body {
+  & div:not(:first-child) {
+    margin-top: 20px;
+  }
+
+  & .Available {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+
+    @include respond(phone) {
+      width: 300px;
+    }
+
+    & p {
+      margin: 0;
+    }
+  }
+}
+
+.Button {
+  margin: auto;
+  width: 300px;
+  text-align: left;
+
+  @include respond(phone) {
+    width: 300px;
+  }
+}

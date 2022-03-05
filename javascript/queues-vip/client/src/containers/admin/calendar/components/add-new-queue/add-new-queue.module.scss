@@ -1,0 +1,7 @@
+@import "../../../../../models/style/main.scss";
+
+.NewQueue {
+  & select {
+    width: 300px;
+  }
+}

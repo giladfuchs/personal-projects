@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context=".InsideLine">
+
+    <Chronometer
+        android:id="@+id/chronometer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#4169E1"
+        android:textSize="32dp"
+        android:layout_above="@+id/start_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="55dp"
+        />
+
+    <Button
+        android:id="@+id/start_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="70dp"
+        android:layout_marginBottom="148dp"
+        android:text="כנס לתור"
+        android:textColor="@color/button_selectorcolor"
+        android:background="@color/button" />
+
+    <Button
+        android:id="@+id/pause_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chronometer"
+        android:layout_marginStart="11dp"
+        android:layout_toEndOf="@+id/chronometer"
+        android:text="צא לאחר קבלת שירות" />
+
+    <Button
+        android:id="@+id/reset_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pause_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:text="יציאה" />
+
+    <TextView
+        android:id="@+id/nameplace"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-75dp"
+        android:layout_marginTop="211dp"
+        android:layout_toEndOf="@+id/start_button" />
+</RelativeLayout>

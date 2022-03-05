@@ -1,0 +1,100 @@
+<div class="row">
+  <div class="col-xs-12">
+    <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+      <div>
+        <div>
+          <label>first-name</label>
+          <input
+            type="text"
+            name="first-name"
+            id="firstName"
+            class="form-control"
+            placeholder="last name"
+            formControlName="firstName"
+            [readonly]="!editMode"
+          />
+          <div *ngIf="valid('firstName')" class="error">error</div>
+        </div>
+
+        <div>
+          <label>family-name</label>
+          <input
+            type="text"
+            name="family-name"
+            class="form-control"
+            placeholder="last name"
+            formControlName="lastName"
+            [readonly]="!editMode"
+          />
+          <div *ngIf="valid('lastName')" class="error">error</div>
+        </div>
+
+        <div>
+          <label>nickName</label>
+          <input
+            type="text"
+            id="nickName"
+            name="nickname"
+            class="form-control"
+            placeholder="nick name"
+            formControlName="nickName"
+            [readonly]="!editMode"
+          />
+        </div>
+
+        <div>
+          <label>address</label>
+          <input
+            type="text"
+            id="address"
+            name="address"
+            class="form-control"
+            placeholder="Your address"
+            formControlName="address"
+            [readonly]="!editMode"
+          />
+        </div>
+        <br />
+      </div>
+      <div class="row">
+        <div class="buttons">
+          <button
+            *ngIf="editMode"
+            class="btn btn-success"
+            type="submit"
+            [disabled]="
+              !(!valid('firstName', true) && !valid('lastName', true))
+            "
+          >
+            {{ userId ? 'Update' : 'Add' }}
+          </button>
+          <button
+            class="btn btn-danger"
+            type="button"
+            (click)="onDelete()"
+            *ngIf="userId && !editMode"
+          >
+            Delete
+          </button>
+
+          <button
+            *ngIf="userId && !editMode"
+            class="btn btn-primary"
+            type="button"
+            (click)="setEditable()"
+          >
+            Edit
+          </button>
+          <button
+            *ngIf="userId && editMode"
+            class="btn btn-warning"
+            type="button"
+            (click)="cancelEditable()"
+          >
+            Cancel Edit
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

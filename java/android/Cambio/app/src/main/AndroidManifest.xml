@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.matan.coin">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/coin_app"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/coin_app"
+        android:supportsRtl="false"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".Board" />
+        <activity android:name="com.matan.private_zone.PrivateZone" />
+        <activity android:name="com.matan.login_and_signup.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.matan.Chat.MainChat" />
+        <activity android:name="com.matan.private_zone.AddAdvertisement" />
+        <activity android:name="com.matan.login_and_signup.Loading" />
+        <activity android:name=".AdvertisementProperties" />
+        <activity android:name="com.matan.private_zone.LoadingPrivateZone" />
+        <activity android:name="com.matan.Chat.LoadingChat" />
+        <activity android:name=".Filter" />
+        <activity android:name="com.matan.private_zone.ModifyAdvertisement"></activity>
+    </application>
+
+</manifest>

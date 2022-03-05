@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "986125585053",
+    "firebase_url": "https://cambio-37c35.firebaseio.com",
+    "project_id": "cambio-37c35",
+    "storage_bucket": "cambio-37c35.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:986125585053:android:158a822009e18fb4",
+        "android_client_info": {
+          "package_name": "com.matan.coin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "986125585053-dokg4vl6vi7h1ja9mjk0tq2uv35ov4d5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.matan.coin",
+            "certificate_hash": "d2b826341dba3f8aa1bab2510fd93da2a89d445a"
+          }
+        },
+        {
+          "client_id": "986125585053-bdg33ca9foae575u7mv4ogn2h5up0pu1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCxl1UukQNF5CB4FUrTFCsDgdcl5EcW3M4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "986125585053-bdg33ca9foae575u7mv4ogn2h5up0pu1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

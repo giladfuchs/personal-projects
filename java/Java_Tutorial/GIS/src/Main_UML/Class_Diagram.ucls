@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.2.2" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
+  associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
+  <class id="1" language="java" name="File_format.Csv_to_DB" project="Ex_Oopp" 
+    file="/Ex_Oopp/src/File_format/Csv_to_DB.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="106" width="162" x="479" y="128"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="2" language="java" name="GIS.Project" project="Ex_Oopp" file="/Ex_Oopp/src/GIS/Project.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="178" width="185" x="1620" y="128"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" name="Test.ReadCsv_Test_onlyWigile" project="Ex_Oopp" 
+    file="/Ex_Oopp/src/Test/ReadCsv_Test_onlyWigile.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="106" width="208" x="681" y="128"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="4" language="java" name="Geom.Point3D" project="Ex_Oopp" file="/Ex_Oopp/src/Geom/Point3D.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="934" width="274" x="2966" y="454"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="5" language="java" name="GUI.JFrmaeGraphics" project="Ex_Oopp" file="/Ex_Oopp/src/GUI/JFrmaeGraphics.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="124" width="140" x="929" y="128"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="6" language="java" name="GUI.SimpleJButton" project="Ex_Oopp" file="/Ex_Oopp/src/GUI/SimpleJButton.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="106" width="130" x="1109" y="128"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="7" language="java" name="GIS.GIS_element" project="Ex_Oopp" file="/Ex_Oopp/src/GIS/GIS_element.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="124" width="179" x="3280" y="454"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="8" language="java" name="Test.MultyCSV_Test" project="Ex_Oopp" file="/Ex_Oopp/src/Test/MultyCSV_Test.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="106" width="131" x="1279" y="128"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="9" language="java" name="GIS.Meta_data" project="Ex_Oopp" file="/Ex_Oopp/src/GIS/Meta_data.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="124" width="172" x="2529" y="1428"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="10" language="java" name="GIS.Layer" project="Ex_Oopp" file="/Ex_Oopp/src/GIS/Layer.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="142" width="185" x="2741" y="128"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="11" language="java" name="Coords.coords_converter" project="Ex_Oopp" 
+    file="/Ex_Oopp/src/Coords/coords_converter.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="160" width="311" x="3499" y="454"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="12" language="java" name="GIS.Element" project="Ex_Oopp" file="/Ex_Oopp/src/GIS/Element.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="268" width="197" x="2966" y="128"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="13" language="java" name="File_format.Json_101" project="Ex_Oopp" 
+    file="/Ex_Oopp/src/File_format/Json_101.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="142" width="130" x="1450" y="128"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="14" language="java" name="GIS.GIS_layer" project="Ex_Oopp" file="/Ex_Oopp/src/GIS/GIS_layer.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="88" width="185" x="2741" y="454"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="15" language="java" name="Test.WriteToKMLTest" project="Ex_Oopp" 
+    file="/Ex_Oopp/src/Test/WriteToKMLTest.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="106" width="142" x="1845" y="128"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="16" language="java" name="Coords.MyCoords" project="Ex_Oopp" file="/Ex_Oopp/src/Coords/MyCoords.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="286" width="311" x="3499" y="128"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="17" language="java" name="File_format.csv2kml" project="Ex_Oopp" 
+    file="/Ex_Oopp/src/File_format/csv2kml.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="124" width="253" x="2027" y="128"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="18" language="java" name="GIS.GIS_project" project="Ex_Oopp" file="/Ex_Oopp/src/GIS/GIS_project.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="88" width="185" x="1620" y="454"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="19" language="java" name="GUI.Example01" project="Ex_Oopp" file="/Ex_Oopp/src/GUI/Example01.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="124" width="140" x="2320" y="128"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="20" language="java" name="GIS.Data" project="Ex_Oopp" file="/Ex_Oopp/src/GIS/Data.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="304" width="172" x="2529" y="454"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="21" language="java" name="Geom.Geom_element" project="Ex_Oopp" 
+    file="/Ex_Oopp/src/Geom/Geom_element.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="106" width="187" x="2966" y="1428"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="22" language="java" name="Algorithms.MultyCSV" project="Ex_Oopp" 
+    file="/Ex_Oopp/src/Algorithms/MultyCSV.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="106" width="201" x="2500" y="128"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <association id="23">    
+    <end type="SOURCE" refId="12" navigable="false">      
+      <attribute id="24" name="data"/>      
+      <multiplicity id="25" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="20" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="26">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="18"/>  
+  </realization>  
+  <association id="27">    
+    <end type="SOURCE" refId="2" navigable="false">      
+      <attribute id="28" name="db"/>      
+      <multiplicity id="29" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="20" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="30">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="14"/>  
+  </realization>  
+  <realization id="31">    
+    <end type="SOURCE" refId="16"/>    
+    <end type="TARGET" refId="11"/>  
+  </realization>  
+  <association id="32">    
+    <end type="SOURCE" refId="10" navigable="false">      
+      <attribute id="33" name="db"/>      
+      <multiplicity id="34" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="20" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="35">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="21"/>  
+  </realization>  
+  <realization id="36">    
+    <end type="SOURCE" refId="20"/>    
+    <end type="TARGET" refId="9"/>  
+  </realization>  
+  <association id="37">    
+    <end type="SOURCE" refId="12" navigable="false">      
+      <attribute id="38" name="point"/>      
+      <multiplicity id="39" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="4" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="40">    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="7"/>  
+  </realization>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>

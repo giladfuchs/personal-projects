@@ -1,0 +1,35 @@
+<style>
+img:hover{
+ box-shadow: 0px 10px 50px lightcoral;
+ }
+ p{  text-align: left;}
+</style>
+
+<h2 class="page-header"> Search post</h2 class="page-header">
+<form action="/posts" method="GET">
+    <div>
+<label >Title</label>
+<input type="text" name="title" value="<%= searchOptions.title  %> ">
+</div>
+<div>
+<label >Published After</label>
+<input type="date" name="publishedAfter" value="<%= searchOptions.publishedAfter  %> ">
+</div>
+<div>
+    <label >Published Before</label>
+    <input type="date" name="publishedBefore" value="<%= searchOptions.publishedBefore  %> ">
+    </div>
+<button type="submit" class="btn btn-primary">search</button>
+</form>
+<div>
+<% if(locals.posts != null) {%>
+<% posts.forEach(element => {%> 
+    <h1 class="page-header"><%= element.title %></h1>
+    <a href= "/posts/<%= element.id %>">
+        <img src="<%= element.postImagePath %>" height="250" width="400" >
+    </a>
+ 
+    <h2 class="page-header">description: <%= element.description %></h2>
+    <br>
+ <%});}  %> 
+</div>

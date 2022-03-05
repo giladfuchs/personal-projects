@@ -1,0 +1,30 @@
+@import "../../style/main.scss";
+
+.Header {
+  text-align: center;
+  animation: fade 0.5s ease-in-out;
+
+  & .Title {
+    color: $purple-register;
+    margin: 0;
+    font-size: $big-size;
+  }
+
+  & .SubTitle {
+    color: $text-hint;
+    margin: 0;
+    font-size: $small-size;
+  }
+}
+
+.Error {
+  color: $error;
+  margin: 0;
+  margin-right: 30px;
+  animation: fade-right 0.3s linear;
+
+  &::before {
+    content: "שגיאה: ";
+    font-weight: 500;
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "env": {
+    "MONGO_URI": "mongodb+srv://brary:brary@cluster0-yvh5q.mongodb.net/",
+    "JWT_SECRET": "roeeangel",
+    "PORT": "8080"
+  }
+}

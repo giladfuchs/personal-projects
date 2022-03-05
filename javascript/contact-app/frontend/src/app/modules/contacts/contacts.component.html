@@ -1,0 +1,52 @@
+<div class="form">
+  <form class="form" [formGroup]="filterForm">
+    <mat-form-field class="full-width">
+      <input
+        type="text"
+        placeholder="Search contact"
+        matInput
+        formControlName="search"
+      />
+    </mat-form-field>
+  </form>
+  <button class="btn btn-primary form" type="button" (click)="addContact()">
+    Add Contact
+  </button>
+
+  <div class="table-wrapper">
+    <div
+      #scrollMe
+      class="table-scroll"
+      infinite-scroll
+      [infiniteScrollDistance]="scrollDistance"
+      [infiniteScrollUpDistance]="scrollUpDistance"
+      [infiniteScrollThrottle]="throttle"
+      (scroll)="onScroll()"
+    >
+      <ul class="list-group col-sm-4">
+        <li
+          class="list-group-item"
+          style="cursor: pointer"
+          *ngFor="let contact of contactsView"
+          (click)="onEditContact(contact.id)"
+        >
+          <img
+            *ngIf="contact.photo"
+            [src]="contact.photo.imgUrl"
+            width="50"
+            height="60"
+            [style.filter]="createFilterPhoto(contact.photo)"
+          />
+          <p>
+            {{ contact.name }}
+          </p>
+        </li>
+        <mat-spinner
+          style="margin: auto"
+          [diameter]="40"
+          *ngIf="loading"
+        ></mat-spinner>
+      </ul>
+    </div>
+  </div>
+</div>

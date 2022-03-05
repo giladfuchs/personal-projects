@@ -1,0 +1,22 @@
+.photo {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.photo img {
+  width: 130px;
+  height: 60px;
+}
+.buttons {
+  flex-direction: row;
+}
+.buttons button {
+  margin: 4px;
+}
+.error {
+  height: 40px;
+  width: 100%;
+  color: #d8000c;
+  background-color: #ffbaba;
+}

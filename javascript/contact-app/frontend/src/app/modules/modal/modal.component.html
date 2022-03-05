@@ -1,0 +1,33 @@
+<div *ngIf="open">
+  <div class="backdrop" (click)="onClose()"></div>
+  <div class="modal-box">
+    <div *ngIf="editedContact">
+      <app-img-contact
+        [photo]="editedContact.photo"
+        [userId]="editedContact.id"
+      ></app-img-contact>
+    </div>
+    <div class="modal-box-actions">
+      <app-contact-details
+        [addContact]="onSubmit"
+        [editedContact]="editedContact?.contact"
+        [userId]="editedContact?.id"
+      ></app-contact-details>
+      <div class="error" *ngIf="error !== ''">
+        <button class="btn btn-primary" (click)="onCloseError()">Ok</button>
+        {{ error }}
+      </div>
+      <button class="btn btn-warning" (click)="onClose()">
+        {{ editedContact ? 'Close Contact' : 'Cancel' }}
+      </button>
+      <div>
+        <br />
+        <app-phone-number
+          [phoneNumbers]="editedContact?.phoneNumbers"
+          [userId]="editedContact?.id"
+          (setPhoneNumber)="setPhoneNumber($event)"
+        ></app-phone-number>
+      </div>
+    </div>
+  </div>
+</div>

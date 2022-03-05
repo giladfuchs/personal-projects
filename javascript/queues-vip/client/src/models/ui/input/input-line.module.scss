@@ -1,0 +1,61 @@
+@import "../../style/main.scss";
+
+.Input {
+  position: relative;
+  width: 350px;
+  margin: auto;
+  @include respond(phone) {
+    width: 300px;
+  }
+
+  & .InputItem {
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 1px solid $text-hint;
+    color: $purple;
+    font-size: 1rem;
+    font-family: inherit;
+    transition: all 0.2s ease-in-out;
+    margin-top: 20px;
+    width: 100%;
+    @include respond(phone) {
+      width: 300px;
+    }
+
+    &::placeholder {
+      font-weight: 100;
+      font-family: inherit;
+    }
+
+    &:focus {
+      border-bottom: 1px solid $purple;
+      color: $purple;
+    }
+  }
+
+  & .Label {
+    position: absolute;
+    pointer-events: none;
+    width: 40% !important;
+    top: 10px !important;
+    left: 175px !important;
+    font-size: $small-size;
+    font-family: inherit;
+    opacity: 0;
+    background-color: none;
+    padding: 0 2px;
+    -webkit-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
+
+    @include respond(phone) {
+      left: 145px;
+    }
+  }
+}
+
+.InputItem:not(:placeholder-shown) + .Label {
+  opacity: 1;
+  top: 2px !important;
+  color: $text-body;
+}

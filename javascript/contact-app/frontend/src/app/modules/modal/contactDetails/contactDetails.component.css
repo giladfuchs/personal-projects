@@ -1,0 +1,23 @@
+.error {
+  height: 20px;
+  width: 100%;
+  color: #d8000c;
+  background-color: #ffbaba;
+  text-align: left;
+}
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.buttons button {
+  margin: 4px;
+}
+label {
+  float: left;
+  width: 10em;
+  margin: 4px;
+  margin-right: 1em;
+  text-align: left;
+}

@@ -1,0 +1,69 @@
+<style>
+  .filepond--item {
+    width: calc(50% - 0.15em);
+  }
+  .filepond--root {
+    max-height: 10em;
+  }
+  .form-row {
+    display: flex;
+    margin-bottom: 0.5rem;
+  }
+
+  .form-item {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+    flex-grow: 1;
+    flex-basis: 0;
+  }
+  .description {
+    height: 150px;
+    width: 500px;
+  }
+</style>
+<div class="form-row">
+  <div class="form-item">
+    <label>Title</label>
+    <input type="text" name="title" value="<%=  post.title %>" />
+  </div>
+  <div class="form-item">
+    <label>Author</label>
+    <select name="author">
+      <% authors.forEach(author => { %> <% if (author.id === post.author){ %>
+      <option
+        selected
+        label="<%= author.name  %> "
+        value="<%= author.id  %> "
+      ></option>
+      <% console.log("if") %> <% }else{ %>
+      <option label=" <%= author.name  %> " value="<%= author.id%>"> </option>
+
+      <% }}); %>
+    </select>
+  </div>
+</div>
+<div class="form-row">
+  <div class="form-item">
+    <label>Publish Date</label>
+    <input
+      type="date"
+      name="publishDate"
+      value="<%=post.publishDate == null ? '' :post.publishDate.toISOString().split('T')[0]%>"
+    />
+  </div>
+  <div class="form-item"></div>
+</div>
+<div class="form-row">
+  <div class="form-item form-item-no-grow">
+    <label>Cover</label>
+    <input type="file" name="cover" class="filepond" height="150" width="120" />
+  </div>
+
+  <div class="form-item">
+    <label>Desciption</label>
+    <textarea id="description" name="description" class="description">
+<%=post.description%></textarea
+    >
+  </div>
+</div>

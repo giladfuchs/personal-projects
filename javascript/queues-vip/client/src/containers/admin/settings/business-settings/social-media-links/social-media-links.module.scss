@@ -1,0 +1,37 @@
+@import "../../../../../models/style/main.scss";
+
+.Links {
+  width: 260px;
+  @include respond(phone) {
+    width: 80%;
+  }
+
+  & .Link {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    &:not(:first-child) {
+      margin-top: 18px;
+    }
+
+    & input {
+      width: 90%;
+      border: none;
+      border-bottom: 1px solid #d9d9d9;
+      color: $text-body;
+      font-family: inherit;
+      box-sizing: border-box;
+      font-size: 0.8rem;
+      font-weight: 400;
+      transition: all 0.3s linear 0s;
+      background: none;
+
+      &:focus {
+        color: $text-body;
+        border-bottom: 1px solid $purple-register;
+        outline: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+<h2 class="page-header">Search</h2>
+<form action="/authors" method="GET">
+  <label>name</label>
+  <input type="text" name="name" />
+  <button class="btn btn-primary" type="submit">search</button>
+</form>
+<br />
+
+<% if(locals.authors != null) {%> <% authors.forEach(author => {%>
+
+<h2 class="page-header">Author Name: <%= author.name %></h2>
+
+<div class="btn-row">
+  <a class="btn btn-primary" href="/authors/<%= author.id %>">
+    Show author
+  </a>
+  <a class="btn btn-primary" href="/authors/<%= author.id %>/edit">
+    Edit
+  </a>
+  <%- include('../partials/deleteForm', {url: `/authors/${author.id}`}) %>
+</div>
+<%});} %>

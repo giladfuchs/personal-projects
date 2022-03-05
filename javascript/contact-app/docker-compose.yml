@@ -1,0 +1,40 @@
+version: '3.3'
+services:
+  api:
+    build:
+      dockerfile: Dockerfile
+      context: ./api
+
+    volumes:
+      - ./api:/api/src/app
+      - /api/src/app/node_modules/
+    command: npm start
+    depends_on:
+      - postgres
+    environment:
+      DATABASE_URL: postgres://postgres:postgres@postgres:5432/contact
+      PORT: 3000
+    ports:
+      - '3000:3000'
+
+  frontend:
+    build:
+      dockerfile: Dockerfile
+      context: ./frontend
+    command: npm start
+    volumes:
+      - ./frontend:/frontend/src/app
+      - /frontend/src/app/node_modules
+    ports:
+      - 4200:4200
+    links:
+      - api
+
+  postgres:
+    image: postgres:10.4
+    ports:
+      - '35000:5432'
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: contact

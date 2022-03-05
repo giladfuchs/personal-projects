@@ -1,0 +1,76 @@
+@import "../../../../models/style/main.scss";
+
+.Button {
+  text-align: center;
+  margin-top: 20px;
+  animation: fade 0.5s ease-in-out;
+
+  & a {
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    width: 20%;
+    text-decoration: none;
+    color: $text-body;
+    transition: all 0.4s ease-in-out;
+    &:hover {
+      color: $purple-register;
+    }
+  }
+}
+
+.Form {
+  height: 40vh !important;
+  @include respond(phone) {
+    height: 60vh !important;
+  }
+}
+
+.Register {
+  margin: auto;
+  width: 100vw;
+  height: 100vh;
+  background: $background-register;
+  position: relative;
+
+  & .Timeline {
+    position: absolute;
+    left: 47%;
+    top: 15%;
+    transform: translateX(-50%);
+    width: 40vw;
+
+    @include respond(phone) {
+      left: 55%;
+      width: 100vw;
+    }
+  }
+
+  & .Form2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40vw;
+    height: 55vh;
+    background: $white;
+    border: 0 none;
+    border-radius: 3px;
+    box-shadow: 0 17px 41px -21px rgb(0, 0, 0);
+    padding: 20px 30px;
+    border-top: 9px solid $purple-register;
+    box-sizing: border-box;
+    overflow-y: auto;
+
+    @include respond(phone) {
+      top: 55%;
+      width: 100vw;
+      height: 60vh;
+    }
+  }
+}
+
+.Body {
+  @include flexWarp;
+  margin-top: 30px;
+}

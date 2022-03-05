@@ -1,0 +1,80 @@
+<div class="photo">
+  <div class="photo">
+    <img
+      [src]="
+        editMode && reader && reader.result
+          ? reader.result
+          : photo
+          ? photo.imgUrl
+          : noImageUrl
+      "
+      [style.filter]="createFilterPhoto()"
+    />
+    <!-- [style.filter]="filterString" -->
+    <div class="buttons">
+      <button
+        *ngIf="!editMode"
+        class="btn btn-success"
+        type="button"
+        (click)="setEditable()"
+      >
+        {{ photo ? 'Edit' : 'Add' }} photo
+      </button>
+      <button
+        class="btn btn-danger"
+        type="button"
+        (click)="onDelete()"
+        *ngIf="photo"
+      >
+        Delete
+      </button>
+    </div>
+  </div>
+
+  <div *ngIf="editMode" class="photo">
+    <form [formGroup]="uploadForm" (ngSubmit)="onSubmit()">
+      <div class="photo">
+        <label for="file">Upload Photo</label>
+        <input
+          type="file"
+          class="form-control"
+          id="file"
+          formControlName="file"
+          (change)="onImageChange($event)"
+        />
+      </div>
+      <p *ngIf="error !== ''" class="error">
+        {{ error }}
+      </p>
+      <br />
+
+      <div class="buttons">
+        <button
+          class="btn btn-success"
+          type="submit"
+          [disabled]="this.error !== ''"
+        >
+          {{ photo ? 'Update' : 'Upload' }} photo
+        </button>
+        <button
+          class="btn btn-warning"
+          type="button"
+          (click)="cancelEditable()"
+        >
+          cancel
+        </button>
+      </div>
+    </form>
+    <br />
+    <span class="photo buttons">
+      <ol *ngFor="let fiter of filters">
+        <mat-checkbox
+          [(ngModel)]="fiter.apply"
+          (ngModelChange)="createFilterPhoto()"
+        >
+          {{ fiter.name }}
+        </mat-checkbox>
+      </ol>
+    </span>
+  </div>
+</div>

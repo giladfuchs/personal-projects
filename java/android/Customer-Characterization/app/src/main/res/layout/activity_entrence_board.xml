@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical"
+    tools:context="com.coders.location.EntrenceBoard">
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="מה תרצה"
+        android:textColor="@color/white_greyish"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/option"
+        android:layout_width="fill_parent"
+        android:layout_height="67dp"
+        android:gravity="right"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="149dp"
+        tools:spinnerMode="dropdown" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/white_greyish" />
+
+
+    <Button
+        android:id="@+id/filterBtn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:padding="5dp"
+        android:text="בחר"
+        android:background="@color/button"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+    <CheckBox
+        android:id="@+id/remember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="זכור את בחירתי"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/map" />
+
+
+
+
+</LinearLayout>

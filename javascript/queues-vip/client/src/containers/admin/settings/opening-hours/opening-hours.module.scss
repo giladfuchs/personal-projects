@@ -1,0 +1,88 @@
+@import "../../../../models/style/main.scss";
+
+.OpeningHours {
+  width: 94vw;
+  margin: auto;
+  animation: fade 0.5s ease-in-out;
+
+  @include respond(phone) {
+    width: 100vw;
+    margin-right: 0;
+  }
+
+  & .Body {
+    @include settingsBody;
+    height: 293px;
+    margin: 0;
+
+    @include respond(phone) {
+      height: 100%;
+      margin: 3px 0;
+    }
+
+    & .Days {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 0;
+      @include respond(phone) {
+        display: none;
+      }
+
+      & .Day {
+        font-size: 1rem;
+        color: $text-body;
+      }
+    }
+
+    & .DaysContent {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 20px;
+
+      @include respond(phone) {
+        flex-wrap: wrap;
+        margin-top: 10px;
+      }
+
+      & .DayContent {
+        margin: auto;
+
+        & label {
+          display: block;
+          margin: auto;
+        }
+
+        & div {
+          margin-top: 30px;
+        }
+        & button {
+          margin: auto;
+          width: 1000px;
+          justify-content: center;
+        }
+        & .Day {
+          display: none;
+
+          @include respond(phone) {
+            display: block;
+            text-align: center;
+          }
+        }
+      }
+    }
+    & .Button {
+      @include settingsButton;
+      text-align: center;
+
+      margin: 0.9rem;
+    }
+  }
+
+  // & .Button {
+  //   @include settingsButton;
+
+  //   @include respond(phone) {
+  //     text-align: center;
+  //   }
+  // }
+}

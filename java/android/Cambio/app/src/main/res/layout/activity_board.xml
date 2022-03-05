@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical"
+    tools:context="com.matan.coin.Board">
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/filter"
+        android:textColor="@color/white_greyish"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/sourceCoin"
+        android:layout_width="fill_parent"
+        android:layout_height="36dp"
+        android:gravity="right"
+        android:hint="@string/source_coin"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="149dp"
+        tools:spinnerMode="dropdown" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/white_greyish" />
+
+    <Spinner
+        android:id="@+id/destinationCoin"
+        android:layout_width="fill_parent"
+        android:layout_height="36dp"
+        android:gravity="right"
+        android:hint="@string/destination_coin"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="149dp"
+        tools:spinnerMode="dropdown" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/white_greyish" />
+
+    <Spinner
+        android:id="@+id/location"
+        android:layout_width="fill_parent"
+        android:layout_height="36dp"
+        android:gravity="right"
+        android:hint="@string/location_adver"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="149dp"
+        tools:spinnerMode="dropdown" />
+
+    <Button
+        android:id="@+id/filterBtn"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/loginbutton_selector"
+        android:padding="3dp"
+        android:text="@string/filter"
+        android:textColor="@color/background_color"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/filterCancelBtn"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/loginbutton_selector"
+        android:padding="3dp"
+        android:text="Cancel Filter"
+        android:textColor="@color/background_color"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="370dp"
+        android:layout_height="319dp"
+        android:background="@color/fui_bgFacebook" />
+
+
+    <Button
+        android:id="@+id/privateZoneBtn"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/loginbutton_selector"
+        android:padding="3dp"
+        android:text="Private Zone"
+        android:textColor="@color/background_color"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+
+</LinearLayout>

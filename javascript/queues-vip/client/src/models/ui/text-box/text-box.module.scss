@@ -1,0 +1,17 @@
+@import "../../style/main.scss";
+
+.Box {
+  background-color: rgba($color: $white, $alpha: 1);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    transform: scale(1.02);
+  }
+
+//   @include respond(phone) {
+//     width: 70vw !important;
+//   }
+}

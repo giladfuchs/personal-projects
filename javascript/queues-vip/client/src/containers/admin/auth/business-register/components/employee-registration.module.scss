@@ -1,0 +1,61 @@
+@import "../../../../../models/style/main.scss";
+
+.Manager {
+  animation: fade 0.5s ease-in-out;
+}
+
+.Body {
+  @include flexWarp;
+  margin-top: 30px;
+}
+
+.Buttons {
+  text-align: left;
+  margin-left: 30px;
+  margin-top: 20px;
+  @include respond(phone) {
+    text-align: center;
+  }
+}
+.Buttons2 {
+  display: flex;
+  justify-content: space-around;
+  @include respond(phone) {
+    margin-top: 30px;
+  }
+}
+
+.Error {
+  color: $error;
+  margin: 0;
+  margin-right: 30px;
+  margin-top: 10px;
+  animation: fade-right 0.3s linear;
+
+  &::before {
+    content: "שגיאה: ";
+    font-weight: 500;
+  }
+}
+
+//domain
+.BodyDomain {
+  @include flexWarp;
+  margin-top: 50px;
+}
+
+.ButtonDomain {
+  text-align: center;
+}
+
+//PhoneValidation
+.PhoneValidation {
+  text-align: center;
+
+  & .ButtonsPhoneValidation {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 50%;
+  }
+}

@@ -1,0 +1,8 @@
+<h2 class="page-header">edit post</h2>
+
+<form action="/posts/<%= post.id %>?_method=PUT" method="POST">
+  <a href="/posts/<%= post.id %>" class="btn btn-danger">Cancel</a>
+
+  <button class="btn btn-primary" type="submit">Update</button>
+  <%- include('_form_fields') %>
+</form>

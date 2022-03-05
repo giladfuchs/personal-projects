@@ -1,0 +1,81 @@
+@import "../../style/main.scss";
+
+.Input {
+  position: relative;
+  @include respond(phone) {
+    width: 80%;
+  }
+
+  & .Label {
+    position: absolute;
+    pointer-events: none;
+    top: 10px;
+    left: 120px;
+    text-align: center;
+    font-size: $small-size;
+    font-family: inherit;
+    opacity: 0;
+    background-color: $white;
+    padding: 0 2px;
+    -webkit-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
+  }
+
+  & .InputItem,
+  & textArea {
+    outline: none;
+    display: block;
+    width: 100%;
+    margin: 0 0 20px;
+    padding: 10px 15px;
+    border: 1px solid #d9d9d9;
+    border-radius: 3px;
+    color: #837e7e;
+    font-family: inherit;
+    box-sizing: border-box;
+    font-size: 0.8rem;
+    font-weight: 400;
+    transition: all 0.3s linear 0s;
+    resize: vertical;
+
+    &:focus {
+      color: $text-body;
+      border: 1px solid $purple-register;
+    }
+  }
+
+  & textArea {
+    height: 100px;
+  }
+
+  & .Error {
+    position: absolute;
+    border-radius: 3px;
+    box-shadow: 0 0 0 transparent;
+    margin-top: -100px;
+    padding: 0 10px;
+    height: 30px;
+    display: block;
+    color: #ffffff;
+    background: $error;
+    border: 0;
+    line-height: 39px;
+    white-space: nowrap;
+    animation: error 0.2s ease-in-out;
+
+    & i {
+      margin: 5px 5px 5px 0;
+      font-size: $small-size;
+      position: relative;
+      bottom: 5px;
+    }
+  }
+}
+
+.InputItem:not(:placeholder-shown) + .Label,
+textarea:not(:placeholder-shown) + .Label {
+  opacity: 1;
+  top: -10px;
+  left: 10px;
+  color: $text-body;
+}

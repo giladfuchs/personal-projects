@@ -1,0 +1,22 @@
+<style>
+  img:hover {
+    box-shadow: 0px 10px 50px lightcoral;
+  }
+</style>
+
+<h2 class="page-header"><%= author.name %></h2>
+
+<form action="/authors/<%= author.id %>/edit" method="GET">
+  <button type="submit" class="btn btn-primary">Edit</button>
+</form>
+<%- include('../partials/deleteForm', {url: `/authors/${author.id}`}) %> <%
+if(locals.posts != null && locals.posts.length > 0) {%>
+<h2>posts by Author</h2>
+<% posts.forEach(element => {%>
+<form action="/posts/<%= element.id %>" method="GET">
+  <button type="submit">
+    <img src="<%= element.postImagePath %>" height="500" width="500" />
+  </button>
+</form>
+<br />
+<%});} %>

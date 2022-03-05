@@ -1,0 +1,52 @@
+.backdrop {
+  position: fixed;
+}
+
+.modal-box {
+  position: absolute;
+  margin: auto;
+  right: 5%;
+  top: 0;
+  width: 90%;
+  height: 800px;
+  padding: 16px;
+  z-index: 100;
+  background: white;
+}
+@media (min-height: 600px) and (min-width: 600px) {
+  .backdrop {
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.75);
+    z-index: 50;
+  }
+
+  .modal-box {
+    /* position: fixed; */
+    margin: 100px;
+    right: 20%;
+    top: 10px;
+    width: 40vw;
+    height: auto;
+    padding: 16px;
+    z-index: 100;
+    box-shadow: 0 2px 8px rbga(0, 0, 0, 0.26);
+  }
+}
+.modal-box-actions {
+  text-align: center;
+}
+.modal-box-actions button {
+  justify-content: center;
+  align-items: center;
+}
+.error {
+  height: 40px;
+  width: 100%;
+  color: #d8000c;
+  background-color: #ffbaba;
+  text-align: left;
+  z-index: 110;
+}

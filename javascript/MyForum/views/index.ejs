@@ -1,0 +1,8 @@
+<h2 class="page-header">Recently Added</h2>
+<div>
+  <% if(locals.posts != null) {%> <% posts.forEach(element => {%>
+  <a href="/posts/<%= element.id %>">
+    <img src="<%= element.postImagePath %>" height="250" width="200" />
+  </a>
+  <%});} %>
+</div>

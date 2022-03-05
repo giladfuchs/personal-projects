@@ -1,0 +1,86 @@
+@import "../../../../models/style/main.scss";
+
+.BusinessSettings {
+  width: 85vw;
+  margin: auto;
+  animation: fade 0.5s ease-in-out;
+
+  @include respond(phone) {
+    width: 100vw;
+    margin-right: 0;
+  }
+
+  & .Body {
+    @include settingsBody;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: 400px;
+    width: 820px;
+
+    @include respond(phone) {
+      height: 100%;
+    }
+
+    & .Details {
+      width: 60%;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin-top: 30px;
+
+      @include respond(phone) {
+        width: 100%;
+      }
+    }
+
+    & .Photo {
+      width: 39%;
+      margin: auto;
+      text-align: center;
+      flex-direction: column;
+      @include respond(phone) {
+        display: none;
+      }
+      & img {
+        width: 350px;
+      }
+    }
+
+    .Head {
+      position: relative;
+      // padding: 10.9rem;
+      margin: auto;
+      // flex-direction: row;
+
+      & .Button {
+        @include settingsButton;
+        position: absolute;
+        left: 50%;
+        // flex-direction: row;
+        text-align: center;
+        align-items: center;
+      }
+    }
+  }
+
+  // & .Button {
+  //   @include settingsButton;
+
+  //   @include respond(phone) {
+  //     text-align: center;
+  //   }
+  // }
+}
+
+.Error {
+  color: $error;
+  margin: 0;
+  margin-right: 40px;
+  animation: fade-right 0.3s linear;
+
+  &::before {
+    content: "שגיאה: ";
+    font-weight: 500;
+  }
+}

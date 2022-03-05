@@ -1,0 +1,13 @@
+:root {
+  --nav-title-font-size: 30px;
+  --nav-title-font-weight: bold;
+  --nav-link-font-weight: 200;
+  --color-base-danger-offset: 180;
+  --color-base-hue: 11;
+  --color-danger-hue: calc(
+    var(--color-base-hue) - var(--color-base-danger-offset)
+  );
+  --color-background-dark: hsl(var(--color-base-hue), 72%, 21%);
+  --color-background-light: hsl(var(--color-base-hue), 98%, 46%);
+  --color-text-light: hsl(var(--color-base-hue), 100%, 87%);
+}

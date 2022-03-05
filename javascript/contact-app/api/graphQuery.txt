@@ -1,0 +1,132 @@
+
+#  mutation{
+#    createContact(
+#        CreateContactInput:{
+#        firstName:"a",
+#      	lastName:"dsaa",
+# 		photo:{
+#        imgUrl:"AffFS",
+#           gray:false,
+#           blur:true,
+#           saturation:true
+#     }
+
+#        }
+    
+#      )
+#      {
+#        id
+#      }
+#    }
+   # query {
+   #   contact(
+   #     id:44
+   # ){
+   #  	firstName
+   #  photo{imgUrl}
+   #   phoneNumbers{type, id, numericNumber}    }
+   # }
+   # query{
+   #   contacts{
+   #     id
+   #     firstName
+   #     lastName
+   #     phoneNumbers{type, id, numericNumber}
+   #    photo{imgUrl}
+   #   }
+   # }
+# mutation{
+#   createPhoto(
+#     userId:44,
+  
+#   CreatePhoto:{
+#          imgUrl:"AffFS",
+#           gray:false,
+#           blur:true,
+#           saturation:true
+#   }
+#   )
+#   {
+#     id
+#   }
+# }
+# mutation{deleteContact(id:39)}
+# mutation{deletePhoto(id:28)}
+
+# mutation{
+#   createPhoneNumber(
+#     userId:6,
+#     CreatePhoneNumberInput22:{
+
+#     type:"sdddd",
+#       numericNumber:"2332223222"
+
+#   })
+#     {
+#       id
+#     }
+#   }
+
+# query{ phones
+# {
+#   id
+# }
+# }
+
+
+// # mutation{
+// #   createContact(
+//   #     CreateContactInput:{
+//   #     firstName:"a",
+//   #   	lastName:"dsaa",
+//   #     }
+//   #   )
+//   #   {
+//   #     id
+//   #   }
+//   # }
+
+//   # mutation{
+//   # createPhoneNumber(
+//   #   userId:6,
+//   #   CreatePhoneNumberInput:{
+
+//   #   type:"sdddd",
+//   #     numericNumber:"2332223222"
+
+//   # })
+//   #   {
+//   #     id
+//   #   }
+//   # }
+//   # query{
+//   #   contacts{
+//   #     id
+//   #     firstName
+//   #     lastName
+//   #     phoneNumbers{type, id, numericNumber}
+//   #   }
+//   # }
+//   # query {
+//   #   contact(
+//   #     id:13
+//   # ){
+//   #  	firstName
+//   #   phoneNumbers{type, id, numericNumber}
+
+//   # }
+//   # }
+
+//   # mutation{deleteContact(id:5)}
+//   mutation{
+//     updateContact(id:15,
+//       CreateContactInput:{
+
+//       lastName:"2fsd",
+
+//       }
+//     )
+//     {
+//       lastName
+//     }
+//   }

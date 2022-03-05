@@ -1,0 +1,47 @@
+@import "../../style/main.scss";
+
+.Checkbox {
+  & input {
+    display: none;
+    &:checked + label::before {
+      background-color: $purple-register;
+      border-color: $background-menu;
+      color: #fff;
+      text-align: center;
+    }
+
+    &:disabled + label::before {
+      transform: scale(1);
+      border-color: #aaa;
+    }
+
+    &:checked:disabled + label::before {
+      transform: scale(1);
+      background-color: #bfb;
+      border-color: #bfb;
+    }
+  }
+
+  & label {
+    display: block;
+    cursor: pointer;
+
+    &::before {
+      content: "\2714";
+      border: 1px solid #000;
+      border-radius: 0.2em;
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      padding-left: 0.2em;
+      padding-bottom: 0.3em;
+      vertical-align: bottom;
+      color: transparent;
+      transition: 0.2s;
+    }
+
+    &:active::before {
+      transform: scale(0);
+    }
+  }
+}

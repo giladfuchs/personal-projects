@@ -1,0 +1,108 @@
+@import "../../../models/style/main.scss";
+
+.Calendar {
+  width: 100%;
+  // margin: 50px;
+
+  // position: relative;
+
+  @include respond(phone) {
+    width: 100vw;
+    margin-right: 0;
+  }
+
+  & .Header {
+    // position: absolute;
+    top: 80px;
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 14px;
+    & Button {
+      margin: 3px;
+    }
+    @include respond(phone) {
+      width: 100%;
+      top: 120px;
+      justify-content: space-around;
+      margin-right: 0;
+    }
+  }
+
+  & .Content {
+    // position: absolute;
+    // top: 90px;
+    height: 90vh;
+    width: 100%;
+    overflow-y: auto;
+    text-align: center;
+    color: $white;
+
+    @include respond(phone) {
+      width: 100vw;
+      height: 80vh;
+      font-size: $small-size;
+      top: 160px;
+    }
+
+    & table {
+      border: 1px solid #222a45;
+      border-collapse: collapse;
+      width: 100%;
+      margin: auto;
+    }
+
+    & th {
+      border: 1px solid #222a45;
+      border-collapse: collapse;
+      position: sticky;
+      top: 0;
+      background-color: #7467ef;
+      font-weight: 500;
+      @include respond(phone) {
+        font-weight: 400;
+      }
+    }
+
+    & td {
+      border: 1px solid #222a45;
+      border-collapse: collapse;
+      cursor: pointer;
+      font-weight: 400;
+    }
+
+    & .TableHeader {
+      height: 40px;
+    }
+
+    & .Hours {
+      background-color: #7467ef;
+    }
+
+    & .Slot {
+      width: 0;
+      height: 20px;
+      transition: all 0.1s ease-in-out;
+
+      &:hover {
+        background-color: $text-hint;
+      }
+    }
+
+    & .Event {
+      background-color: #222a45;
+      border: 1px solid #222a45;
+      max-width: 0;
+
+      &:hover {
+        background-color: #222a45;
+      }
+    }
+
+    & .NoWork {
+      background-color: $text-hint;
+      cursor: none;
+    }
+  }
+}
