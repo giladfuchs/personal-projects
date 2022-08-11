@@ -1,0 +1,17 @@
+Implement the exercise using Django and avoid additional dependencies
+
+I'm not familiar with Django so I guess settings.py contain some redundants import or variable.
+
+
+Pay attention
+to how you generate the short URL. What can go wrong? How do you plan to handle it
+
+I saw there is many tutorials on how to crate short URL.
+I do validate with API call for the URL to check that available and correct.and then I init object with increment key that will be is unique short url. 
+
+Include unit tests 
+I'm added test to check if hit the counter work well. 
+
+Include meaningful comments 
+I don't find a place for a comment cause it's really small code and in all the error messages
+there is a detail of what I try to accomplish and why it's fall.
