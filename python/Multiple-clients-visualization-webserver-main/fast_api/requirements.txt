@@ -1,0 +1,10 @@
+
+uvicorn==0.15.0
+
+redis==4.0.2
+fastapi==0.70.0
+fastapi-pagination==0.9.1
+python-jose==3.3.0
+typing-extensions==4.0.0
+pydantic==1.8.2
+starlette==0.16.0

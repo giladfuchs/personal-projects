@@ -1,0 +1,9 @@
+fast_api/venv
+react/node_modules
+venv
+fast_api/.idea
+fast_api/.DS_Store
+fast_api/README.md
+.idea
+react/.vscode
+react/build

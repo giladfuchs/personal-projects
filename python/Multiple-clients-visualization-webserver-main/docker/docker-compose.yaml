@@ -1,0 +1,26 @@
+version: "3.7"
+services:
+  frontend:
+    image:  frontend:latest
+    build: ../react
+    ports:
+      - 127.0.0.1:3000:80
+    volumes:
+      - ../react/build/:/usr/share/nginx/html
+
+  backend:
+    image:  backend:latest
+    build: ../fast_api
+    restart: always
+
+    command: bash ./start_server.sh
+
+    ports:
+      - 127.0.0.1:5000:80
+
+  redis:
+    image: redis:alpine
+    ports:
+      - 127.0.0.1:6379:6379
+    command: redis-server
+
