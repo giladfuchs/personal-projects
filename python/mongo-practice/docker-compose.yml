@@ -1,0 +1,14 @@
+
+version: '3.8'
+
+services:
+  mongodb:
+    image: mongo:latest
+    container_name: my-mongodb-container
+    ports:
+      - "27017:27017"
+    volumes:
+      - my-mongodb-data:/data
+
+volumes:
+  my-mongodb-data:
