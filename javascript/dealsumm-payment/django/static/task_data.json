@@ -1,0 +1,956 @@
+
+{
+  "tenants": [
+    {
+      "id": 30841,
+      "name": "Bath & Body Works",
+      "rentable_area": 65334,
+      "property_name": "Mountain Top Mall",
+      "project_name": "Blue Sky Properties"
+    },
+    {
+      "id": 30846,
+      "name": "Dollar Tree",
+      "rentable_area": 26667,
+      "property_name": "Mountain Top Mall",
+      "project_name": "Blue Sky Properties"
+    },
+    {
+      "id": 31155,
+      "name": "Foot Locker",
+      "rentable_area": 8035,
+      "property_name": "Mountain Top Mall",
+      "project_name": "Blue Sky Properties"
+    },
+    {
+      "id": 30875,
+      "name": "H&R Block",
+      "rentable_area": 19712,
+      "property_name": "Mountain Top Mall",
+      "project_name": "Blue Sky Properties"
+    },
+    {
+      "id": 31144,
+      "name": "Rack Room Shoes",
+      "rentable_area": 3851,
+      "property_name": "Mountain Top Mall",
+      "project_name": "Blue Sky Properties"
+    },
+    {
+      "id": 30802,
+      "name": "Subway",
+      "rentable_area": 47938,
+      "property_name": "Mountain Top Mall",
+      "project_name": "Blue Sky Properties"
+    },
+    {
+      "id": 30102,
+      "name": "dummy",
+      "rentable_area": 47938,
+      "property_name": "dummy property",
+      "project_name": "dummy project"
+    }
+  ],
+  "payments": [
+    {
+      "tenant_30802": null,
+      "tenant_30841": 58710.73,
+      "tenant_30846": 43489.43,
+      "tenant_30875": null,
+      "tenant_31144": null,
+      "tenant_31155": null,
+      "payment_date": "2021-06-01"
+    },
+    {
+      "tenant_30802": null,
+      "tenant_30841": 58710.73,
+      "tenant_30846": 43489.43,
+      "tenant_30875": null,
+      "tenant_31144": null,
+      "tenant_31155": 11365.78,
+      "payment_date": "2021-07-01"
+    },
+    {
+      "tenant_30802": null,
+      "tenant_30841": 58710.73,
+      "tenant_30846": 43489.43,
+      "tenant_30875": null,
+      "tenant_31144": null,
+      "tenant_31155": 11365.78,
+      "payment_date": "2021-08-01"
+    },
+    {
+      "tenant_30802": null,
+      "tenant_30841": null,
+      "tenant_30846": null,
+      "tenant_30875": null,
+      "tenant_31144": null,
+      "tenant_31155": 11365.78,
+      "payment_date": "2021-09-01"
+    },
+    {
+      "tenant_30802": null,
+      "tenant_30841": null,
+      "tenant_30846": null,
+      "tenant_30875": 32849.19,
+      "tenant_31144": 5936.96,
+      "tenant_31155": 11365.78,
+      "payment_date": "2021-10-01"
+    },
+    {
+      "tenant_30802": null,
+      "tenant_30841": null,
+      "tenant_30846": null,
+      "tenant_30875": 32849.19,
+      "tenant_31144": 5936.96,
+      "tenant_31155": 11365.78,
+      "payment_date": "2021-11-01"
+    },
+    {
+      "tenant_30802": null,
+      "tenant_30841": null,
+      "tenant_30846": null,
+      "tenant_30875": 32849.19,
+      "tenant_31144": 5936.96,
+      "tenant_31155": 11706.75,
+      "payment_date": "2021-12-01"
+    },
+    {
+      "tenant_30802": null,
+      "tenant_30841": 58710.73,
+      "tenant_30846": 43489.43,
+      "tenant_30875": 32849.19,
+      "tenant_31144": 5936.96,
+      "tenant_31155": 11706.75,
+      "payment_date": "2022-01-01"
+    },
+    {
+      "tenant_30802": null,
+      "tenant_30841": 58710.73,
+      "tenant_30846": 43489.43,
+      "tenant_30875": 32849.19,
+      "tenant_31144": 5936.96,
+      "tenant_31155": 11706.75,
+      "payment_date": "2022-02-01"
+    },
+    {
+      "tenant_30802": null,
+      "tenant_30841": 58710.73,
+      "tenant_30846": 43489.43,
+      "tenant_30875": 32849.19,
+      "tenant_31144": 5936.96,
+      "tenant_31155": 11706.75,
+      "payment_date": "2022-03-01"
+    },
+    {
+      "tenant_30802": 65195.68,
+      "tenant_30841": 58710.73,
+      "tenant_30846": 43489.43,
+      "tenant_30875": 32849.19,
+      "tenant_31144": 5936.96,
+      "tenant_31155": 11706.75,
+      "payment_date": "2022-04-01"
+    },
+    {
+      "tenant_30802": 74064.21,
+      "tenant_30841": 58710.73,
+      "tenant_30846": 43489.43,
+      "tenant_30875": 32849.19,
+      "tenant_31144": 6116.67,
+      "tenant_31155": 11706.75,
+      "payment_date": "2022-05-01"
+    },
+    {
+      "tenant_30802": 74064.21,
+      "tenant_30841": 60480.76,
+      "tenant_30846": 44800.56,
+      "tenant_30875": 32849.19,
+      "tenant_31144": 6116.67,
+      "tenant_31155": 11706.75,
+      "payment_date": "2022-06-01"
+    },
+    {
+      "tenant_30802": 74064.21,
+      "tenant_30841": 60480.76,
+      "tenant_30846": 44800.56,
+      "tenant_30875": 32849.19,
+      "tenant_31144": 6116.67,
+      "tenant_31155": 11706.75,
+      "payment_date": "2022-07-01"
+    },
+    {
+      "tenant_30802": 74064.21,
+      "tenant_30841": 60480.76,
+      "tenant_30846": 44800.56,
+      "tenant_30875": 32849.19,
+      "tenant_31144": 6116.67,
+      "tenant_31155": 11706.75,
+      "payment_date": "2022-08-01"
+    },
+    {
+      "tenant_30802": 76301.32,
+      "tenant_30841": 60480.76,
+      "tenant_30846": 44800.56,
+      "tenant_30875": 32849.19,
+      "tenant_31144": 6116.67,
+      "tenant_31155": 11706.75,
+      "payment_date": "2022-09-01"
+    },
+    {
+      "tenant_30802": 76301.32,
+      "tenant_30841": 60480.76,
+      "tenant_30846": 44800.56,
+      "tenant_30875": 33834.67,
+      "tenant_31144": 6116.67,
+      "tenant_31155": 11706.75,
+      "payment_date": "2022-10-01"
+    },
+    {
+      "tenant_30802": 76301.32,
+      "tenant_30841": 60480.76,
+      "tenant_30846": 44800.56,
+      "tenant_30875": 33834.67,
+      "tenant_31144": 6116.67,
+      "tenant_31155": 11706.75,
+      "payment_date": "2022-11-01"
+    },
+    {
+      "tenant_30802": 76301.32,
+      "tenant_30841": 60480.76,
+      "tenant_30846": 44800.56,
+      "tenant_30875": 33834.67,
+      "tenant_31144": 6116.67,
+      "tenant_31155": 12057.95,
+      "payment_date": "2022-12-01"
+    },
+    {
+      "tenant_30802": 76301.32,
+      "tenant_30841": 60480.76,
+      "tenant_30846": 44800.56,
+      "tenant_30875": 33834.67,
+      "tenant_31144": 6116.67,
+      "tenant_31155": 12057.95,
+      "payment_date": "2023-01-01"
+    },
+    {
+      "tenant_30802": 76301.32,
+      "tenant_30841": 60480.76,
+      "tenant_30846": 44800.56,
+      "tenant_30875": 33834.67,
+      "tenant_31144": 6116.67,
+      "tenant_31155": 12057.95,
+      "payment_date": "2023-02-01"
+    },
+    {
+      "tenant_30802": 76301.32,
+      "tenant_30841": 60480.76,
+      "tenant_30846": 44800.56,
+      "tenant_30875": 33834.67,
+      "tenant_31144": 6116.67,
+      "tenant_31155": 12057.95,
+      "payment_date": "2023-03-01"
+    },
+    {
+      "tenant_30802": 76301.32,
+      "tenant_30841": 60480.76,
+      "tenant_30846": 44800.56,
+      "tenant_30875": 33834.67,
+      "tenant_31144": 6116.67,
+      "tenant_31155": 12057.95,
+      "payment_date": "2023-04-01"
+    },
+    {
+      "tenant_30802": 76301.32,
+      "tenant_30841": 60480.76,
+      "tenant_30846": 44800.56,
+      "tenant_30875": 33834.67,
+      "tenant_31144": 6299.59,
+      "tenant_31155": 12057.95,
+      "payment_date": "2023-05-01"
+    },
+    {
+      "tenant_30802": 76301.32,
+      "tenant_30841": 62280.78,
+      "tenant_30846": 46133.91,
+      "tenant_30875": 33834.67,
+      "tenant_31144": 6299.59,
+      "tenant_31155": 12057.95,
+      "payment_date": "2023-06-01"
+    },
+    {
+      "tenant_30802": 76301.32,
+      "tenant_30841": 62280.78,
+      "tenant_30846": 46133.91,
+      "tenant_30875": 33834.67,
+      "tenant_31144": 6299.59,
+      "tenant_31155": 12057.95,
+      "payment_date": "2023-07-01"
+    },
+    {
+      "tenant_30802": 76301.32,
+      "tenant_30841": 62280.78,
+      "tenant_30846": 46133.91,
+      "tenant_30875": 33834.67,
+      "tenant_31144": 6299.59,
+      "tenant_31155": 12057.95,
+      "payment_date": "2023-08-01"
+    },
+    {
+      "tenant_30802": 78578.37,
+      "tenant_30841": 62280.78,
+      "tenant_30846": 46133.91,
+      "tenant_30875": 33834.67,
+      "tenant_31144": 6299.59,
+      "tenant_31155": 12057.95,
+      "payment_date": "2023-09-01"
+    },
+    {
+      "tenant_30802": 78578.37,
+      "tenant_30841": 62280.78,
+      "tenant_30846": 46133.91,
+      "tenant_30875": 34849.71,
+      "tenant_31144": 6299.59,
+      "tenant_31155": 12057.95,
+      "payment_date": "2023-10-01"
+    },
+    {
+      "tenant_30802": 78578.37,
+      "tenant_30841": 62280.78,
+      "tenant_30846": 46133.91,
+      "tenant_30875": 34849.71,
+      "tenant_31144": 6299.59,
+      "tenant_31155": 12057.95,
+      "payment_date": "2023-11-01"
+    },
+    {
+      "tenant_30802": 78578.37,
+      "tenant_30841": 62280.78,
+      "tenant_30846": 46133.91,
+      "tenant_30875": 34849.71,
+      "tenant_31144": 6299.59,
+      "tenant_31155": 12419.69,
+      "payment_date": "2023-12-01"
+    },
+    {
+      "tenant_30802": 78578.37,
+      "tenant_30841": 62280.78,
+      "tenant_30846": 46133.91,
+      "tenant_30875": 34849.71,
+      "tenant_31144": 6299.59,
+      "tenant_31155": 12419.69,
+      "payment_date": "2024-01-01"
+    },
+    {
+      "tenant_30802": 78578.37,
+      "tenant_30841": 62280.78,
+      "tenant_30846": 46133.91,
+      "tenant_30875": 34849.71,
+      "tenant_31144": 6299.59,
+      "tenant_31155": 12419.69,
+      "payment_date": "2024-02-01"
+    },
+    {
+      "tenant_30802": 78578.37,
+      "tenant_30841": 62280.78,
+      "tenant_30846": 46133.91,
+      "tenant_30875": 34849.71,
+      "tenant_31144": 6299.59,
+      "tenant_31155": 13143.92,
+      "payment_date": "2024-03-01"
+    },
+    {
+      "tenant_30802": 78578.37,
+      "tenant_30841": 62280.78,
+      "tenant_30846": 46133.91,
+      "tenant_30875": 34849.71,
+      "tenant_31144": 6299.59,
+      "tenant_31155": 13143.92,
+      "payment_date": "2024-04-01"
+    },
+    {
+      "tenant_30802": 78578.37,
+      "tenant_30841": 62280.78,
+      "tenant_30846": 46133.91,
+      "tenant_30875": 34849.71,
+      "tenant_31144": 6488.94,
+      "tenant_31155": 13538.98,
+      "payment_date": "2024-05-01"
+    },
+    {
+      "tenant_30802": 78578.37,
+      "tenant_30841": 64140.81,
+      "tenant_30846": 47511.71,
+      "tenant_30875": 34849.71,
+      "tenant_31144": 6488.94,
+      "tenant_31155": 13538.98,
+      "payment_date": "2024-06-01"
+    },
+    {
+      "tenant_30802": 78578.37,
+      "tenant_30841": 64140.81,
+      "tenant_30846": 47511.71,
+      "tenant_30875": 34849.71,
+      "tenant_31144": 6488.94,
+      "tenant_31155": 13538.98,
+      "payment_date": "2024-07-01"
+    },
+    {
+      "tenant_30802": 78578.37,
+      "tenant_30841": 64140.81,
+      "tenant_30846": 47511.71,
+      "tenant_30875": 34849.71,
+      "tenant_31144": 6488.94,
+      "tenant_31155": 13538.98,
+      "payment_date": "2024-08-01"
+    },
+    {
+      "tenant_30802": null,
+      "tenant_30841": 64140.81,
+      "tenant_30846": 47511.71,
+      "tenant_30875": 34849.71,
+      "tenant_31144": 6488.94,
+      "tenant_31155": 13538.98,
+      "payment_date": "2024-09-01"
+    },
+    {
+      "tenant_30802": null,
+      "tenant_30841": 64140.81,
+      "tenant_30846": 47511.71,
+      "tenant_30875": 35895.2,
+      "tenant_31144": 6488.94,
+      "tenant_31155": 13538.98,
+      "payment_date": "2024-10-01"
+    },
+    {
+      "tenant_30802": null,
+      "tenant_30841": 64140.81,
+      "tenant_30846": 47511.71,
+      "tenant_30875": 35895.2,
+      "tenant_31144": 6488.94,
+      "tenant_31155": 13538.98,
+      "payment_date": "2024-11-01"
+    },
+    {
+      "tenant_30802": null,
+      "tenant_30841": 64140.81,
+      "tenant_30846": 47511.71,
+      "tenant_30875": 35895.2,
+      "tenant_31144": 6488.94,
+      "tenant_31155": 13538.98,
+      "payment_date": "2024-12-01"
+    },
+    {
+      "tenant_30802": null,
+      "tenant_30841": 64140.81,
+      "tenant_30846": 47511.71,
+      "tenant_30875": 35895.2,
+      "tenant_31144": 6488.94,
+      "tenant_31155": 13538.98,
+      "payment_date": "2025-01-01"
+    },
+    {
+      "tenant_30802": null,
+      "tenant_30841": 64140.81,
+      "tenant_30846": 47511.71,
+      "tenant_30875": 35895.2,
+      "tenant_31144": 6488.94,
+      "tenant_31155": 13538.98,
+      "payment_date": "2025-02-01"
+    },
+    {
+      "tenant_30802": null,
+      "tenant_30841": 64140.81,
+      "tenant_30846": 47511.71,
+      "tenant_30875": 35895.2,
+      "tenant_31144": 6488.94,
+      "tenant_31155": 13538.98,
+      "payment_date": "2025-03-01"
+    },
+    {
+      "tenant_30802": null,
+      "tenant_30841": 64140.81,
+      "tenant_30846": 47511.71,
+      "tenant_30875": 35895.2,
+      "tenant_31144": 6488.94,
+      "tenant_31155": 13538.98,
+      "payment_date": "2025-04-01"
+    },
+    {
+      "tenant_30802": null,
+      "tenant_30841": 64140.81,
+      "tenant_30846": 47511.71,
+      "tenant_30875": 35895.2,
+      "tenant_31144": 6681.49,
+      "tenant_31155": 13940.73,
+      "payment_date": "2025-05-01"
+    },
+    {
+      "tenant_30802": null,
+      "tenant_30841": 66060.83,
+      "tenant_30846": 48933.95,
+      "tenant_30875": 35895.2,
+      "tenant_31144": 6681.49,
+      "tenant_31155": 13940.73,
+      "payment_date": "2025-06-01"
+    },
+    {
+      "tenant_30802": null,
+      "tenant_30841": 66060.83,
+      "tenant_30846": 48933.95,
+      "tenant_30875": 35895.2,
+      "tenant_31144": 6681.49,
+      "tenant_31155": 13940.73,
+      "payment_date": "2025-07-01"
+    },
+    {
+      "tenant_30802": null,
+      "tenant_30841": 66060.83,
+      "tenant_30846": 48933.95,
+      "tenant_30875": 35895.2,
+      "tenant_31144": 6681.49,
+      "tenant_31155": 13940.73,
+      "payment_date": "2025-08-01"
+    },
+    {
+      "tenant_30802": null,
+      "tenant_30841": 66060.83,
+      "tenant_30846": 48933.95,
+      "tenant_30875": 35895.2,
+      "tenant_31144": 6681.49,
+      "tenant_31155": 13940.73,
+      "payment_date": "2025-09-01"
+    },
+    {
+      "tenant_30802": null,
+      "tenant_30841": 66060.83,
+      "tenant_30846": 48933.95,
+      "tenant_30875": 36972.05,
+      "tenant_31144": 6681.49,
+      "tenant_31155": 13940.73,
+      "payment_date": "2025-10-01"
+    },
+    {
+      "tenant_30802": null,
+      "tenant_30841": 66060.83,
+      "tenant_30846": 48933.95,
+      "tenant_30875": 36972.05,
+      "tenant_31144": 6681.49,
+      "tenant_31155": 13940.73,
+      "payment_date": "2025-11-01"
+    },
+    {
+      "tenant_30802": null,
+      "tenant_30841": 66060.83,
+      "tenant_30846": 48933.95,
+      "tenant_30875": 36972.05,
+      "tenant_31144": 6681.49,
+      "tenant_31155": 13940.73,
+      "payment_date": "2025-12-01"
+    },
+    {
+      "tenant_30802": null,
+      "tenant_30841": 66060.83,
+      "tenant_30846": 48933.95,
+      "tenant_30875": 36972.05,
+      "tenant_31144": 6681.49,
+      "tenant_31155": 13940.73,
+      "payment_date": "2026-01-01"
+    },
+    {
+      "tenant_30802": null,
+      "tenant_30841": 66060.83,
+      "tenant_30846": 48933.95,
+      "tenant_30875": 36972.05,
+      "tenant_31144": 6681.49,
+      "tenant_31155": 13940.73,
+      "payment_date": "2026-02-01"
+    },
+    {
+      "tenant_30802": null,
+      "tenant_30841": 66060.83,
+      "tenant_30846": 48933.95,
+      "tenant_30875": 36972.05,
+      "tenant_31144": 6681.49,
+      "tenant_31155": 13940.73,
+      "payment_date": "2026-03-01"
+    },
+    {
+      "tenant_30802": null,
+      "tenant_30841": 66060.83,
+      "tenant_30846": 48933.95,
+      "tenant_30875": 36972.05,
+      "tenant_31144": 6681.49,
+      "tenant_31155": 13940.73,
+      "payment_date": "2026-04-01"
+    },
+    {
+      "tenant_30802": null,
+      "tenant_30841": 66060.83,
+      "tenant_30846": 48933.95,
+      "tenant_30875": 36972.05,
+      "tenant_31144": 6883.66,
+      "tenant_31155": 14362.56,
+      "payment_date": "2026-05-01"
+    },
+    {
+      "tenant_30802": null,
+      "tenant_30841": 68040.85,
+      "tenant_30846": 50400.63,
+      "tenant_30875": 36972.05,
+      "tenant_31144": 6883.66,
+      "tenant_31155": 14362.56,
+      "payment_date": "2026-06-01"
+    },
+    {
+      "tenant_30802": null,
+      "tenant_30841": 68040.85,
+      "tenant_30846": 50400.63,
+      "tenant_30875": 36972.05,
+      "tenant_31144": 6883.66,
+      "tenant_31155": 14362.56,
+      "payment_date": "2026-07-01"
+    },
+    {
+      "tenant_30802": null,
+      "tenant_30841": 68040.85,
+      "tenant_30846": 50400.63,
+      "tenant_30875": 36972.05,
+      "tenant_31144": 6883.66,
+      "tenant_31155": 14362.56,
+      "payment_date": "2026-08-01"
+    },
+    {
+      "tenant_30802": 85888.92,
+      "tenant_30841": 68040.85,
+      "tenant_30846": 50400.63,
+      "tenant_30875": 36972.05,
+      "tenant_31144": 6883.66,
+      "tenant_31155": 14362.56,
+      "payment_date": "2026-09-01"
+    },
+    {
+      "tenant_30802": 85888.92,
+      "tenant_30841": 68040.85,
+      "tenant_30846": 50400.63,
+      "tenant_30875": 38081.21,
+      "tenant_31144": 6883.66,
+      "tenant_31155": 14362.56,
+      "payment_date": "2026-10-01"
+    },
+    {
+      "tenant_30802": 85888.92,
+      "tenant_30841": 68040.85,
+      "tenant_30846": 50400.63,
+      "tenant_30875": 38081.21,
+      "tenant_31144": 6883.66,
+      "tenant_31155": 14362.56,
+      "payment_date": "2026-11-01"
+    },
+    {
+      "tenant_30802": 85888.92,
+      "tenant_30841": 68040.85,
+      "tenant_30846": 50400.63,
+      "tenant_30875": 38081.21,
+      "tenant_31144": 6883.66,
+      "tenant_31155": 14362.56,
+      "payment_date": "2026-12-01"
+    },
+    {
+      "tenant_30802": 85888.92,
+      "tenant_30841": 68040.85,
+      "tenant_30846": 50400.63,
+      "tenant_30875": 38081.21,
+      "tenant_31144": 6883.66,
+      "tenant_31155": 14362.56,
+      "payment_date": "2027-01-01"
+    },
+    {
+      "tenant_30802": 85888.92,
+      "tenant_30841": 68040.85,
+      "tenant_30846": 50400.63,
+      "tenant_30875": 38081.21,
+      "tenant_31144": 6883.66,
+      "tenant_31155": 14362.56,
+      "payment_date": "2027-02-01"
+    },
+    {
+      "tenant_30802": 85888.92,
+      "tenant_30841": 68040.85,
+      "tenant_30846": 50400.63,
+      "tenant_30875": 38081.21,
+      "tenant_31144": 6883.66,
+      "tenant_31155": 14362.56,
+      "payment_date": "2027-03-01"
+    },
+    {
+      "tenant_30802": 85888.92,
+      "tenant_30841": 68040.85,
+      "tenant_30846": 50400.63,
+      "tenant_30875": null,
+      "tenant_31144": 6883.66,
+      "tenant_31155": 14362.56,
+      "payment_date": "2027-04-01"
+    },
+    {
+      "tenant_30802": 85888.92,
+      "tenant_30841": 68040.85,
+      "tenant_30846": 50400.63,
+      "tenant_30875": null,
+      "tenant_31144": 7089.05,
+      "tenant_31155": 14791.1,
+      "payment_date": "2027-05-01"
+    },
+    {
+      "tenant_30802": 85888.92,
+      "tenant_30841": 70080.88,
+      "tenant_30846": 51911.76,
+      "tenant_30875": null,
+      "tenant_31144": 7089.05,
+      "tenant_31155": 14791.1,
+      "payment_date": "2027-06-01"
+    },
+    {
+      "tenant_30802": 85888.92,
+      "tenant_30841": 70080.88,
+      "tenant_30846": 51911.76,
+      "tenant_30875": null,
+      "tenant_31144": 7089.05,
+      "tenant_31155": 14791.1,
+      "payment_date": "2027-07-01"
+    },
+    {
+      "tenant_30802": 85888.92,
+      "tenant_30841": 70080.88,
+      "tenant_30846": 51911.76,
+      "tenant_30875": null,
+      "tenant_31144": 7089.05,
+      "tenant_31155": 14791.1,
+      "payment_date": "2027-08-01"
+    },
+    {
+      "tenant_30802": 88485.56,
+      "tenant_30841": 70080.88,
+      "tenant_30846": 51911.76,
+      "tenant_30875": null,
+      "tenant_31144": 7089.05,
+      "tenant_31155": 14791.1,
+      "payment_date": "2027-09-01"
+    },
+    {
+      "tenant_30802": 88485.56,
+      "tenant_30841": 70080.88,
+      "tenant_30846": 51911.76,
+      "tenant_30875": null,
+      "tenant_31144": 7089.05,
+      "tenant_31155": 14791.1,
+      "payment_date": "2027-10-01"
+    },
+    {
+      "tenant_30802": 88485.56,
+      "tenant_30841": 70080.88,
+      "tenant_30846": 51911.76,
+      "tenant_30875": null,
+      "tenant_31144": 7089.05,
+      "tenant_31155": 14791.1,
+      "payment_date": "2027-11-01"
+    },
+    {
+      "tenant_30802": 88485.56,
+      "tenant_30841": 70080.88,
+      "tenant_30846": 51911.76,
+      "tenant_30875": null,
+      "tenant_31144": 7089.05,
+      "tenant_31155": 14791.1,
+      "payment_date": "2027-12-01"
+    },
+    {
+      "tenant_30802": 88485.56,
+      "tenant_30841": 70080.88,
+      "tenant_30846": 51911.76,
+      "tenant_30875": null,
+      "tenant_31144": 7089.05,
+      "tenant_31155": 14791.1,
+      "payment_date": "2028-01-01"
+    },
+    {
+      "tenant_30802": null,
+      "tenant_30841": 70080.88,
+      "tenant_30846": 51911.76,
+      "tenant_30875": null,
+      "tenant_31144": 7089.05,
+      "tenant_31155": 14791.1,
+      "payment_date": "2028-02-01"
+    },
+    {
+      "tenant_30802": null,
+      "tenant_30841": 70080.88,
+      "tenant_30846": 51911.76,
+      "tenant_30875": null,
+      "tenant_31144": 7089.05,
+      "tenant_31155": 14791.1,
+      "payment_date": "2028-03-01"
+    },
+    {
+      "tenant_30802": null,
+      "tenant_30841": 70080.88,
+      "tenant_30846": 51911.76,
+      "tenant_30875": null,
+      "tenant_31144": 7089.05,
+      "tenant_31155": 14791.1,
+      "payment_date": "2028-04-01"
+    },
+    {
+      "tenant_30802": null,
+      "tenant_30841": 70080.88,
+      "tenant_30846": 51911.76,
+      "tenant_30875": null,
+      "tenant_31144": 7300.85,
+      "tenant_31155": 15233.02,
+      "payment_date": "2028-05-01"
+    },
+    {
+      "tenant_30802": null,
+      "tenant_30841": 72180.91,
+      "tenant_30846": 53467.34,
+      "tenant_30875": null,
+      "tenant_31144": 7300.85,
+      "tenant_31155": 15233.02,
+      "payment_date": "2028-06-01"
+    },
+    {
+      "tenant_30802": null,
+      "tenant_30841": 72180.91,
+      "tenant_30846": 53467.34,
+      "tenant_30875": null,
+      "tenant_31144": 7300.85,
+      "tenant_31155": 15233.02,
+      "payment_date": "2028-07-01"
+    },
+    {
+      "tenant_30802": null,
+      "tenant_30841": 72180.91,
+      "tenant_30846": 53467.34,
+      "tenant_30875": null,
+      "tenant_31144": 7300.85,
+      "tenant_31155": 15233.02,
+      "payment_date": "2028-08-01"
+    },
+    {
+      "tenant_30802": null,
+      "tenant_30841": 72180.91,
+      "tenant_30846": 53467.34,
+      "tenant_30875": null,
+      "tenant_31144": 7300.85,
+      "tenant_31155": 15233.02,
+      "payment_date": "2028-09-01"
+    },
+    {
+      "tenant_30802": null,
+      "tenant_30841": 72180.91,
+      "tenant_30846": 53467.34,
+      "tenant_30875": null,
+      "tenant_31144": 7300.85,
+      "tenant_31155": 15233.02,
+      "payment_date": "2028-10-01"
+    },
+    {
+      "tenant_30802": null,
+      "tenant_30841": 72180.91,
+      "tenant_30846": 53467.34,
+      "tenant_30875": null,
+      "tenant_31144": 7300.85,
+      "tenant_31155": 15233.02,
+      "payment_date": "2028-11-01"
+    },
+    {
+      "tenant_30802": null,
+      "tenant_30841": null,
+      "tenant_30846": null,
+      "tenant_30875": null,
+      "tenant_31144": 7300.85,
+      "tenant_31155": 15233.02,
+      "payment_date": "2028-12-01"
+    },
+    {
+      "tenant_30802": null,
+      "tenant_30841": null,
+      "tenant_30846": null,
+      "tenant_30875": null,
+      "tenant_31144": 7300.85,
+      "tenant_31155": 15233.02,
+      "payment_date": "2029-01-01"
+    },
+    {
+      "tenant_30802": null,
+      "tenant_30841": null,
+      "tenant_30846": null,
+      "tenant_30875": null,
+      "tenant_31144": 7300.85,
+      "tenant_31155": 15233.02,
+      "payment_date": "2029-02-01"
+    },
+    {
+      "tenant_30802": null,
+      "tenant_30841": null,
+      "tenant_30846": null,
+      "tenant_30875": null,
+      "tenant_31144": 7300.85,
+      "tenant_31155": 15233.02,
+      "payment_date": "2029-03-01"
+    },
+    {
+      "tenant_30802": null,
+      "tenant_30841": null,
+      "tenant_30846": null,
+      "tenant_30875": null,
+      "tenant_31144": 7300.85,
+      "tenant_31155": 15233.02,
+      "payment_date": "2029-04-01"
+    },
+    {
+      "tenant_30802": null,
+      "tenant_30841": null,
+      "tenant_30846": null,
+      "tenant_30875": null,
+      "tenant_31144": 7522.29,
+      "tenant_31155": 15695.03,
+      "payment_date": "2029-05-01"
+    },
+    {
+      "tenant_30802": null,
+      "tenant_30841": null,
+      "tenant_30846": null,
+      "tenant_30875": null,
+      "tenant_31144": 7522.29,
+      "tenant_31155": 15695.03,
+      "payment_date": "2029-06-01"
+    },
+    {
+      "tenant_30802": null,
+      "tenant_30841": null,
+      "tenant_30846": null,
+      "tenant_30875": null,
+      "tenant_31144": 7522.29,
+      "tenant_31155": 15695.03,
+      "payment_date": "2029-07-01"
+    },
+    {
+      "tenant_30802": null,
+      "tenant_30841": null,
+      "tenant_30846": null,
+      "tenant_30875": null,
+      "tenant_31144": 7522.29,
+      "tenant_31155": 15695.03,
+      "payment_date": "2029-08-01"
+    },
+    {
+      "tenant_30802": null,
+      "tenant_30841": null,
+      "tenant_30846": null,
+      "tenant_30875": null,
+      "tenant_31144": 7522.29,
+      "tenant_31155": 15695.03,
+      "payment_date": "2029-09-01"
+    }
+  ]
+}
