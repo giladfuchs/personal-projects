@@ -1,0 +1,6 @@
+{
+  "extends": "./paths.json",
+  "compilerOptions": {
+    "noEmit": true
+  }
+}
